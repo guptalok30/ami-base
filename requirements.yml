@@ -9,3 +9,6 @@
 
 - src: git+git@github.com:PeopleNet/ansible-docker.git
   name: docker
+
+- src: git+git@github.com:PeopleNet/ansible-logstash.git
+  name: logstash
