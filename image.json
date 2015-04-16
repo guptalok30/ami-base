@@ -1,0 +1,36 @@
+{
+  "variables": {
+    "ami_name" : null,
+    "ami_version" : null,
+    "source_ami": "ami-c82b04a0",
+    "playbook_file": "playbook.yml",
+    "playbook_dir": "build/ansible"
+  },
+  "builders": [
+    {
+      "type": "amazon-ebs",
+      "region": "us-east-1",
+      "source_ami": "{{user `source_ami`}}",
+      "instance_type": "m3.medium",
+      "associate_public_ip_address": true,
+      "ssh_username": "ubuntu",
+      "ami_name": "{{user `ami_name`}}-{{user `ami_version`}}-{{isotime \"2006-01-02_15-04-05\"}}",
+      "tags": {
+        "Date_Created": "{{isotime \"2006-01-02_15-04-05\"}}",
+        "AmiNameAndVersion": "{{user `ami_name`}}-{{user `ami_version`}}"
+      }
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "install_ansible"
+    },
+    {
+      "type": "ansible-local",
+      "playbook_file" : "{{ user `playbook_file`}}",
+      "playbook_dir": "{{ user `playbook_dir` }}",
+      "extra_arguments": ["-e", "app_version={{user `ami_version`}}"]
+    }
+  ]
+}

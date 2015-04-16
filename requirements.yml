@@ -1,0 +1,11 @@
+- src: git+git@github.com:PeopleNet/ansible-consul.git
+  name: consul
+
+- src: playlist.java
+  name: java
+
+- src: git+git@github.com:PeopleNet/ansible-userify.git
+  name: userify
+
+- src: git+git@github.com:PeopleNet/ansible-docker.git
+  name: docker

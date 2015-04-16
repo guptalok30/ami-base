@@ -1,0 +1,16 @@
+---
+- hosts: all
+  sudo: yes
+  gather_facts: yes
+  roles:
+    -
+      role: java
+      java_packages:
+        - oracle-java8-installer
+        - oracle-java8-set-default
+    - role: consul
+    - role: userify
+    -
+      role: docker
+      docker_version: 1.5.0
+      docker_opts: --insecure-registry registry.connectedfleet.io
