@@ -10,6 +10,10 @@ This AMI contains the following items:
 * Userify Credentials from User Date Upstart
 * Peoplenet Consul Configuration
 
+## Versions
+
+* `1.0.0` - `ami-b8c3f9d0`
+
 ## Notes
 
 This project declares it's own `image.json` file.
