@@ -12,6 +12,7 @@ This AMI contains the following items:
 
 ## Versions
 
+* `1.0.1` - `ami-3ee4e156`
 * `1.0.0` - `ami-b8c3f9d0`
 
 ## Notes

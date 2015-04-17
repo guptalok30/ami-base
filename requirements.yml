@@ -1,14 +1,18 @@
 - src: git+git@github.com:PeopleNet/ansible-consul.git
+  version: 1.0.0
   name: consul
 
 - src: playlist.java
   name: java
 
 - src: git+git@github.com:PeopleNet/ansible-userify.git
+  version: 1.0.0
   name: userify
 
 - src: git+git@github.com:PeopleNet/ansible-docker.git
+  version: 1.0.0
   name: docker
 
 - src: git+git@github.com:PeopleNet/ansible-logstash.git
+  version: 1.0.0
   name: logstash
