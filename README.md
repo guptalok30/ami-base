@@ -12,7 +12,12 @@ This AMI contains the following items:
 
 ## Versions
 
+* `1.0.3` - `ami-4ae9ec22`
+  * Still fixing logstash issues
+* `1.0.2` - `ami-4aede822`
+  * Update logstash role due to missing literal " in command.
 * `1.0.1` - `ami-3ee4e156`
+  * Lock versions, included Environment in all logstash tags
 * `1.0.0` - `ami-b8c3f9d0`
 
 ## Notes
