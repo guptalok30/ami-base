@@ -12,6 +12,8 @@ This AMI contains the following items:
 
 ## Versions
 
+* `1.0.5`
+  * Updated logstash role with fixed env var.
 * `1.0.4` - `ami-baf1f6d2`
   * Updated logstash role to handle delay in EC2 tags.
 * `1.0.3` - `ami-4ae9ec22`

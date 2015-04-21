@@ -6,13 +6,13 @@
   name: java
 
 - src: git+git@github.com:PeopleNet/ansible-userify.git
-  version: 1.0.0
+  version: 1.0.1
   name: userify
 
 - src: git+git@github.com:PeopleNet/ansible-docker.git
-  version: 1.0.0
+  version: 1.0.3
   name: docker
 
 - src: git+git@github.com:PeopleNet/ansible-logstash.git
-  version: 1.0.3
+  version: 1.0.4
   name: logstash

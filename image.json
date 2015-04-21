@@ -2,7 +2,7 @@
   "variables": {
     "ami_name" : null,
     "ami_version" : null,
-    "source_ami": "ami-c82b04a0",
+    "source_ami": "ami-86562dee",
     "playbook_file": "playbook.yml",
     "playbook_dir": "build/ansible"
   },
