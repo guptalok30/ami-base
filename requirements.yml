@@ -10,7 +10,7 @@
   name: userify
 
 - src: git+git@github.com:PeopleNet/ansible-docker.git
-  version: 1.0.3
+  version: 1.0.5
   name: docker
 
 - src: git+git@github.com:PeopleNet/ansible-logstash.git
