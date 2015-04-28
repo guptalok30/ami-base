@@ -1,5 +1,9 @@
+- src:  git+git@github.com:PeopleNet/ansible-aws-scripts.git
+  version: 1.0.1
+  name: aws-scripts
+
 - src: git+git@github.com:PeopleNet/ansible-consul.git
-  version: 1.0.0
+  version: 1.0.1
   name: consul
 
 - src: playlist.java
